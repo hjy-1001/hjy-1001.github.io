@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随笔文章 - Gemorion</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .essays-page {
+            padding-top: 5rem;
+            min-height: 100vh;
+        }
+        
+        .essays-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .essays-list {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .essay-item {
+            background: var(--bg-card);
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+        
+        .essay-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .essay-preview {
+            padding: 2rem;
+        }
+        
+        .essay-preview h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .essay-preview h2 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .essay-preview h2 a:hover {
+            color: var(--primary-color);
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        
+        .page-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-color);
+            background: transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+        
+        .page-btn:hover,
+        .page-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Gemorion</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">首页</a></li>
+                <li><a href="../index.html#about" class="nav-link">关于我</a></li>
+                <li><a href="../index.html#essays" class="nav-link active">随笔</a></li>
+                <li><a href="../index.html#academic" class="nav-link">学术分享</a></li>
+                <li><a href="../index.html#gallery" class="nav-link">作品集</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="essays-page">
+        <div class="container">
+            <div class="essays-header">
+                <h1 class="section-title">随笔文章</h1>
+                <div class="section-line"></div>
+                <p class="section-subtitle">记录生活点滴，分享内心感悟</p>
+            </div>
+
+            <div class="essays-list">
+                <article class="essay-item">
+                    <div class="essay-preview">
+                        <div class="essay-meta">
+                            <span class="essay-date">2024.12.15</span>
+                            <span class="essay-category">生活感悟</span>
+                        </div>
+                        <h2><a href="learning-thoughts.html">关于学习的思考</a></h2>
+                        <p class="essay-excerpt">学习不仅仅是知识的积累，更是思维方式的重塑。在这个信息爆炸的时代，如何保持深度学习，如何在有限的时间内获得最大的成长，这是每个人都需要思考的问题...</p>
+                        <a href="learning-thoughts.html" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-preview">
+                        <div class="essay-meta">
+                            <span class="essay-date">2024.12.10</span>
+                            <span class="essay-category">技术随笔</span>
+                        </div>
+                        <h2><a href="#">数字化时代的反思</a></h2>
+                        <p class="essay-excerpt">科技改变了我们的生活方式，但同时也带来了新的挑战。如何在数字化浪潮中保持人文关怀，如何在技术进步中不迷失自我，这些都是值得深思的问题...</p>
+                        <a href="#" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-preview">
+                        <div class="essay-meta">
+                            <span class="essay-date">2024.12.05</span>
+                            <span class="essay-category">创作心得</span>
+                        </div>
+                        <h2><a href="#">创作的力量</a></h2>
+                        <p class="essay-excerpt">每一次创作都是内心的表达，每一个作品都承载着独特的情感。创作让我们与世界建立更深的连接，让我们在表达中找到自己，在分享中获得共鸣...</p>
+                        <a href="#" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-preview">
+                        <div class="essay-meta">
+                            <span class="essay-date">2024.11.28</span>
+                            <span class="essay-category">生活感悟</span>
+                        </div>
+                        <h2><a href="#">慢生活的智慧</a></h2>
+                        <p class="essay-excerpt">在快节奏的现代生活中，我们常常忘记了慢下来的重要性。慢生活不是懒惰，而是一种智慧，是对生活质量的追求，是对内心平静的向往...</p>
+                        <a href="#" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-preview">
+                        <div class="essay-meta">
+                            <span class="essay-date">2024.11.20</span>
+                            <span class="essay-category">读书笔记</span>
+                        </div>
+                        <h2><a href="#">阅读的意义</a></h2>
+                        <p class="essay-excerpt">阅读不仅仅是获取信息，更是一次心灵的旅行。每一本书都是一个世界，每一次阅读都是一次成长。在阅读中，我们遇见不同的思想，感受不同的人生...</p>
+                        <a href="#" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn">下一页</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Gemorion</h3>
+                    <p>探索知识的边界，分享创作的乐趣</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>导航</h4>
+                        <ul>
+                            <li><a href="../index.html#home">首页</a></li>
+                            <li><a href="../index.html#about">关于我</a></li>
+                            <li><a href="../index.html#essays">随笔</a></li>
+                            <li><a href="../index.html#academic">学术分享</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>联系</h4>
+                        <ul>
+                            <li><a href="mailto:your-email@example.com">邮箱</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">微博</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gemorion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

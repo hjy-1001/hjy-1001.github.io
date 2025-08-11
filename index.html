@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemorion - 个人网站</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Gemorion</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#essays" class="nav-link">随笔</a></li>
+                <li><a href="#academic" class="nav-link">学术分享</a></li>
+                <li><a href="#gallery" class="nav-link">作品集</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text">你好，我是 Gemorion</span>
+            </h1>
+            <p class="hero-subtitle">探索 · 创造 · 分享</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">了解更多</a>
+                <a href="#essays" class="btn btn-secondary">查看作品</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>个人简介</h3>
+                        <p>我是一名充满热情的学者和创作者，致力于探索知识的边界，分享学术见解，记录生活点滴。在这里，你可以找到我的学术研究、随笔感悟以及创作作品。</p>
+                        
+                        <div class="skills">
+                            <h4>专业技能</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">研究方法</span>
+                                <span class="skill-tag">学术写作</span>
+                                <span class="skill-tag">数据分析</span>
+                                <span class="skill-tag">创意设计</span>
+                                <span class="skill-tag">项目管理</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h4>联系方式</h4>
+                            <div class="contact-links">
+                                <a href="mailto:your-email@example.com" class="contact-link">
+                                    <i class="fas fa-envelope"></i>
+                                    邮箱联系
+                                </a>
+                                <a href="#" class="contact-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                                <a href="#" class="contact-link">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="assets/images/profile.jpg" alt="Profile Picture" id="profile-img">
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">学术文章</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">随笔记录</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">项目作品</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 随笔 -->
+    <section id="essays" class="essays">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">随笔心得</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">记录生活点滴，分享内心感悟</p>
+            </div>
+            <div class="essays-grid">
+                <article class="essay-card">
+                    <div class="essay-meta">
+                        <span class="essay-date">2024.12.15</span>
+                        <span class="essay-category">生活感悟</span>
+                    </div>
+                    <h3 class="essay-title">关于学习的思考</h3>
+                    <p class="essay-excerpt">学习不仅仅是知识的积累，更是思维方式的重塑。在这个信息爆炸的时代，如何保持深度学习...</p>
+                    <a href="essays/learning-thoughts.html" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </article>
+                
+                <article class="essay-card">
+                    <div class="essay-meta">
+                        <span class="essay-date">2024.12.10</span>
+                        <span class="essay-category">技术随笔</span>
+                    </div>
+                    <h3 class="essay-title">数字化时代的反思</h3>
+                    <p class="essay-excerpt">科技改变了我们的生活方式，但同时也带来了新的挑战。如何在数字化浪潮中保持人文关怀...</p>
+                    <a href="essays/digital-reflection.html" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </article>
+                
+                <article class="essay-card">
+                    <div class="essay-meta">
+                        <span class="essay-date">2024.12.05</span>
+                        <span class="essay-category">创作心得</span>
+                    </div>
+                    <h3 class="essay-title">创作的力量</h3>
+                    <p class="essay-excerpt">每一次创作都是内心的表达，每一个作品都承载着独特的情感。创作让我们与世界建立更深的连接...</p>
+                    <a href="essays/power-of-creation.html" class="essay-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="essays/" class="btn btn-outline">查看更多随笔</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学术分享 -->
+    <section id="academic" class="academic">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">学术分享</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">深度研究，知识传播</p>
+            </div>
+            <div class="academic-content">
+                <div class="academic-categories">
+                    <button class="category-btn active" data-category="all">全部</button>
+                    <button class="category-btn" data-category="research">研究论文</button>
+                    <button class="category-btn" data-category="presentation">学术演讲</button>
+                    <button class="category-btn" data-category="review">文献综述</button>
+                </div>
+                
+                <div class="academic-grid">
+                    <div class="academic-card" data-category="research">
+                        <div class="card-header">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="card-type">研究论文</span>
+                        </div>
+                        <h3 class="card-title">人工智能在教育领域的应用研究</h3>
+                        <p class="card-description">探讨AI技术如何革新传统教育模式，提升学习效率和个性化教学体验。</p>
+                        <div class="card-meta">
+                            <span class="publication">发表于：AI Education Journal</span>
+                            <span class="date">2024.11</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> 下载PDF</a>
+                            <a href="#" class="btn-view"><i class="fas fa-eye"></i> 在线阅读</a>
+                        </div>
+                    </div>
+                    
+                    <div class="academic-card" data-category="presentation">
+                        <div class="card-header">
+                            <i class="fas fa-presentation"></i>
+                            <span class="card-type">学术演讲</span>
+                        </div>
+                        <h3 class="card-title">数字化转型与未来教育</h3>
+                        <p class="card-description">在国际教育技术大会上的主题演讲，分享数字化教育的趋势和挑战。</p>
+                        <div class="card-meta">
+                            <span class="publication">会议：International EdTech Conference</span>
+                            <span class="date">2024.10</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-download"><i class="fas fa-video"></i> 观看视频</a>
+                            <a href="#" class="btn-view"><i class="fas fa-file-powerpoint"></i> 演示文稿</a>
+                        </div>
+                    </div>
+                    
+                    <div class="academic-card" data-category="review">
+                        <div class="card-header">
+                            <i class="fas fa-book-open"></i>
+                            <span class="card-type">文献综述</span>
+                        </div>
+                        <h3 class="card-title">机器学习在自然语言处理中的最新进展</h3>
+                        <p class="card-description">系统性回顾近年来ML在NLP领域的重要突破和发展趋势。</p>
+                        <div class="card-meta">
+                            <span class="publication">发表于：Computational Linguistics Review</span>
+                            <span class="date">2024.09</span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-download"><i class="fas fa-download"></i> 下载PDF</a>
+                            <a href="#" class="btn-view"><i class="fas fa-external-link-alt"></i> 期刊链接</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">作品集</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">创意设计，技术实现</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站设计</button>
+                <button class="filter-btn" data-filter="app">应用开发</button>
+                <button class="filter-btn" data-filter="design">视觉设计</button>
+                <button class="filter-btn" data-filter="research">研究项目</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-category="web">
+                    <div class="item-image">
+                        <img src="assets/images/project1.jpg" alt="项目1">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>响应式个人博客</h3>
+                                <p>基于Jekyll的现代化博客系统</p>
+                                <div class="item-links">
+                                    <a href="#" class="item-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="item-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="app">
+                    <div class="item-image">
+                        <img src="assets/images/project2.jpg" alt="项目2">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>学习管理应用</h3>
+                                <p>智能化学习进度跟踪系统</p>
+                                <div class="item-links">
+                                    <a href="#" class="item-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="item-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="design">
+                    <div class="item-image">
+                        <img src="assets/images/project3.jpg" alt="项目3">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>品牌视觉设计</h3>
+                                <p>完整的品牌形象设计方案</p>
+                                <div class="item-links">
+                                    <a href="#" class="item-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="item-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="research">
+                    <div class="item-image">
+                        <img src="assets/images/project4.jpg" alt="项目4">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>数据可视化研究</h3>
+                                <p>交互式数据分析工具开发</p>
+                                <div class="item-links">
+                                    <a href="#" class="item-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="item-link"><i class="fas fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="web">
+                    <div class="item-image">
+                        <img src="assets/images/project5.jpg" alt="项目5">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>在线协作平台</h3>
+                                <p>团队协作与项目管理工具</p>
+                                <div class="item-links">
+                                    <a href="#" class="item-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="item-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="app">
+                    <div class="item-image">
+                        <img src="assets/images/project6.jpg" alt="项目6">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>移动端阅读应用</h3>
+                                <p>智能推荐的阅读体验应用</p>
+                                <div class="item-links">
+                                    <a href="#" class="item-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="item-link"><i class="fab fa-app-store"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Gemorion</h3>
+                    <p>探索知识的边界，分享创作的乐趣</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>导航</h4>
+                        <ul>
+                            <li><a href="#home">首页</a></li>
+                            <li><a href="#about">关于我</a></li>
+                            <li><a href="#essays">随笔</a></li>
+                            <li><a href="#academic">学术分享</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>联系</h4>
+                        <ul>
+                            <li><a href="mailto:your-email@example.com">邮箱</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">微博</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gemorion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,3 +1,33 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Gemorion - 个人网站
+description: 探索知识的边界，分享创作的乐趣
+author: Gemorion
+email: your-email@example.com
+url: https://hjy-1001.github.io
+baseurl: ""
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# 网站设置
+timezone: Asia/Shanghai
+lang: zh-CN
+
+# 社交媒体
+social:
+  github: Gemorion
+  email: your-email@example.com
