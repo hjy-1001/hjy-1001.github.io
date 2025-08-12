@@ -1,0 +1,66 @@
+/* Sci‑Fi theme base */
+:root{
+  --bg: #06080f;
+  --bg-soft: #0b1020;
+  --card: #0e152b;
+  --text: #d7e0ff;
+  --muted: #8aa0c7;
+  --neon: #64d2ff;
+  --neon-2: #7b5cff;
+  --accent: #13f2a6;
+  --danger: #ff4060;
+  --shadow: 0 10px 30px rgba(0,0,0,.5);
+  --radius: 14px;
+  --container: 1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body.theme-sci-fi{
+  margin:0; color:var(--text); background: radial-gradient(1200px 800px at 70% -10%, rgba(100,210,255,.08), transparent 60%),
+    radial-gradient(800px 600px at 10% 110%, rgba(19,242,166,.06), transparent 60%), var(--bg);
+  font-family: Inter, "Noto Sans SC", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", sans-serif;
+}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+
+/* Starfield canvas */
+#starfield{position:fixed;inset:0;z-index:-1;background:transparent}
+
+/* Header */
+.site-header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(8,12,24,.5);border-bottom:1px solid rgba(100,210,255,.15);z-index:10}
+.site-header .brand{font-family: Orbitron, Inter, sans-serif; font-weight:700; letter-spacing:.08em; color:white; text-decoration:none; font-size:20px}
+.site-nav a{color:var(--text); text-decoration:none; padding:14px 12px; display:inline-block; border-bottom:2px solid transparent}
+.site-nav a:hover{color:white; border-color:var(--neon)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+
+/* Main */
+.site-main{padding:40px 0}
+
+/* Entry layout */
+.entry{background:linear-gradient(180deg, rgba(123,92,255,.08), rgba(100,210,255,.05)); border:1px solid rgba(100,210,255,.15); box-shadow:var(--shadow); border-radius:var(--radius); padding:28px}
+.entry-header{border-bottom:1px dashed rgba(123,92,255,.25); padding-bottom:12px; margin-bottom:18px}
+.entry-title{font-family: Orbitron, Inter, sans-serif; margin:0 0 6px; line-height:1.25}
+.entry-meta{font-size:13px; color:var(--muted); display:flex; gap:10px; flex-wrap:wrap}
+.entry-tags .tag{margin-right:8px; color:var(--accent)}
+.entry-content img{max-width:100%; border-radius:10px}
+.entry-content pre{background:#0b1020; border-radius:10px; padding:14px; overflow:auto}
+.entry-footer{margin-top:20px; border-top:1px dashed rgba(123,92,255,.25); padding-top:14px}
+.back-link{color:var(--neon)}
+
+/* List pages */
+.list-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:18px}
+.card{background:var(--card); border:1px solid rgba(100,210,255,.12); border-radius:var(--radius); padding:18px; transition:.25s transform,.25s box-shadow}
+.card:hover{transform:translateY(-4px); box-shadow:0 10px 30px rgba(100,210,255,.12)}
+.card h3{margin:0 0 8px}
+.card .meta{font-size:12px; color:var(--muted); margin-bottom:10px}
+.card .excerpt{color:#c8d4ff}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(100,210,255,.15); background:rgba(8,12,24,.5)}
+.site-footer .container{padding:24px 0}
+.site-footer p{margin:6px 0; color:var(--muted)}
+
+/* Utilities */
+.badge{display:inline-block; padding:.2em .6em; border:1px solid rgba(100,210,255,.25); border-radius:999px}
+.neon{color:var(--neon)}
+.muted{color:var(--muted)}
